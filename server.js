@@ -9,7 +9,7 @@ const addGoodsRoute = require('./routes/goods/addGoods')
 const getGoodsRoute = require('./routes/goods/getGoods')
 
 const app = express()
-app.use(bodyParser.json())
+app.use(express.json())
 
 app.use(rootRoute)
 app.use(addStoreRoute)
