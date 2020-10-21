@@ -86,9 +86,10 @@ function add(tableName, body) {
   if (!shapedBody) {
     return false
   }
-  return db.get(tableName)
+  db.get(tableName)
     .push(shapedBody)
     .write()
+  return shapedBody
 }
 
 /**
